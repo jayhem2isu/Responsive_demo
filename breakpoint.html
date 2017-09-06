@@ -1,0 +1,74 @@
+<! doctype html>
+<html>
+    <head>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style>
+        body{
+            background-color: red;
+        }
+        .zero, .one, .two, .three{
+            position:absolute;
+            font-size:32px;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+        }
+        .one, .two, .three{
+            display:none;
+        }
+        @media screen and (min-width:993px) and (max-width:1290px) {
+            body{
+                background-color: yellow;
+            }
+            .one{
+                display:block;
+            }
+            .zero, .two, .three{
+                display:none;
+            }
+        }
+
+        @media (min-width:700px) and (max-width:992px) {
+            body{
+                background-color: green;
+            }
+            .two{
+                display:block;
+            }
+            .zero, .one, .three{
+                display:none;
+            }
+        }
+        @media screen and (max-width: 699px) {
+            body{
+                background-color: blue;
+            }
+            .three{
+                display:block;
+            }
+            .zero, .two, .one{
+                display:none;
+            }
+        }
+        </style>
+
+    </head>
+
+    <body>
+        <div class="zero">
+            Resize screen
+        </div>
+        <div class="one">
+            Breakpoint One
+        </div>
+        <div class="two">
+            Breakpoint Two
+        </div>
+        <div class="three">
+            Breakpoint Three
+        </div>
+    </body>
+    
+</html>

@@ -1,0 +1,72 @@
+<! doctype html>
+<html>
+    <head>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style>
+            .grid{
+                width:18%;
+                height:100%;
+                position: relative;
+                border:2px yellow solid;
+                flex-direction:column;
+                padding-left:0;
+            }
+            body{
+                width:100%;
+                display: flex;
+                flex-wrap: wrap;
+                padding-left:0;
+                justify-content:center;
+            }
+            p {
+                position:relative;
+                font-size:32px;
+                width:100%;
+                top:50%;
+                text-align:center;
+            }
+            @media screen and (min-width:641px) and (max-width:992px) {
+                .grid{
+                    width:47%;
+                    border:2px green solid;
+                }
+            }
+            @media screen and (max-width: 640px) {
+                
+                .grid{
+                    min-width:90%;
+                    border:2px blue solid;
+                }
+            }
+        </style>
+
+    </head>
+
+    <body>
+
+        <div class="grid">
+            <p>Grid 1</p>
+        </div>
+
+        <div class="grid">
+            <p>Grid 2</p>
+        </div>
+
+        <div class="grid">
+           <p> Grid 3</p>
+        </div>
+
+        <div class="grid">
+           <p> Grid 4</p>
+        </div>
+
+        <div class="grid">
+            <p>Grid 5</p>
+        </div>
+
+    </body>
+
+
+</html>

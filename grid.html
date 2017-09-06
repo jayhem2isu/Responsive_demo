@@ -1,0 +1,58 @@
+<! doctype html>
+<html>
+    <head>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style>
+            .grid{
+                width:20%;
+                height:100%;
+                position: relative;
+                border:2px yellow solid;
+            }
+            body{
+                display: flex;
+            }
+            p {
+                position:relative;
+                font-size:32px;
+                top:50%;
+                left:75%;
+                transform: translate(-50%,-50%);
+            }
+            @media screen and (max-width: 700px) {
+                p {
+                    font-size:18px;
+                }
+            }
+        </style>
+
+    </head>
+
+    <body>
+
+        <div class="grid">
+            <p>Grid 1</p>
+        </div>
+
+        <div class="grid">
+            <p>Grid 2</p>
+        </div>
+
+        <div class="grid">
+           <p> Grid 3</p>
+        </div>
+
+        <div class="grid">
+           <p> Grid 4</p>
+        </div>
+
+        <div class="grid">
+            <p>Grid 5</p>
+        </div>
+
+    </body>
+
+
+</html>
